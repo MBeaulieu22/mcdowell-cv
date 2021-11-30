@@ -14,73 +14,69 @@
 
 	% Print the header
 	\makeheader
-	
 	% Print the content
-	\begin{cvsection}{Employment}
-		\begin{cvsubsection}{Staff Software Engineer}{Drift}{July 2021 - Present}
-			Messaging Team, New York, NY (Remote)
+	\begin{cvsection}{Education}
+		\begin{cvsubsection}{Worcester Polytechnic Institute}{Worcester, MA}{May 2017}
 			\begin{itemize}
-				\item Optimized our architecture to increase Drift's active conversations capacity 3x, from 100/min to 300/min.
-				\item Migrated and deployed Drift's message sending infrastructure in EU datacenter for the first time.
-				\item Reduced downtime from previous quarter  3x by eliminating dependencies and improving alarming.
+				\item \bf{Bachelor of Science in Computer Science, }\normalfont {GPA: 3.21 / 4.0}
+				\item \bf{Related Coursework: } \normalfont{Object Oriented Analysis and Design, Network Security, Artificial Intelligence, Database Systems, Data Mining, 
+				Embedded Systems, Data Science, Linear Optimization, Operating Systems, Webware}
+				\item \bf{Honors and Awards: }\normalfont {Skull Honor Society, Dr. Allan Parker Scholar (2017), Top TKE Award (2016, 2017)}
 			\end{itemize}
 		\end{cvsubsection}
-		\begin{cvsubsection}{Technical Lead}{Drift}{January 2020 - Present}
-			Messaging and Meetings Teams, Boston MA
+	\end{cvsection}
+	\begin{cvsection}{Languages and Technologies}
+		\begin{cvsubsection}{}{}{}	
 			\begin{itemize}
-				\item Oversaw the growth path of two engineers by holding weekly 1 on 1's and quarterly reviews.
+				\item \bf{Languages:} \normalfont{Java, Python, Javascript/HTML/CSS, C++, SQL, Bash}
+				\item \bf{Frameworks and Libraries:} \normalfont{Dropwizard, React.js, Typescript, Spring}
+				\item \bf{Tools:} \normalfont{Git, AWS (Dynamo, EKS, SNS/SQS, Kinesis, S3), Kubernetes, Maven, NPM, Postman, Lightstep, Kibana, Grafana, GCP, Mode, Jira, Slack}
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	\begin{cvsection}{Employment}
+		\begin{cvsubsection}{Staff Engineer, \normalfont Messaging Team }{Drift}{July 2021 - Present}
+			\begin{itemize}
+				\item Optimized our architecture to increase Drift's active conversations capacity 3x, from 100/min to 300/min.
+				\item Improved architecture by using message queue paradigm to diminish downstream errors and latency.
+				\item Migrated and deployed Drift's message sending infrastructure in European Union datacenter for the first time.
+				\item Reduced downtime from previous quarter  3x by eliminating dependencies and improving alarming.
+				\item Oversaw the success of high traffic events for our customers, like Peloton's Black Friday or AWS's re:Invent
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection2}{Technical Lead, \normalfont Messaging and Meetings teams}{January 2020 - Present}
+			\begin{itemize}
+				\item Supervised the peformance of two engineers by holding weekly 1 on 1's and quarterly reviews.
 				\item Communicated with our product manager on project timelines and aligned on technical priorities.
+				\item Planned and aligned on Objectives and Key Results for the quarter with Product and Engineering leadership.
 				\item Broke larger projects into milestones that allowed engineers to work in parallel without blocking each other.
 				\item Prioritized and resolved incoming bugs and tickets with our support team.
 			\end{itemize}
-		\end{cvsubsection}
-		\begin{cvsubsection}{Sr. Software Engineer}{Drift}{October 2019 - July 2021}	
-			Meetings Team, Boston, MA	
+		\end{cvsubsection2}
+		\begin{cvsubsection2}{Senior Software Engineer, \normalfont Meetings Team}{October 2019 - July 2021}		
 			\begin{itemize}
-				\item Improved Meeting Scheduling SLO from 96.2\% to 99.9\% success rate, and decreased Availability Search SLO from 5s to 2s (99th percentile).  Accomplished this by refactoring and optimizing legacy code.
-				\item Separated Meetings functionality from a monolith architecture into its own microservice, with no downtime.  Also updated the code to Java11 during this time.
-				\item Built text messaging and phone calling features using Twilio in a multi-team effort.   
-				\item Built out the full stack Zoom integration to include zoom meetings links on Drift calendar events, and allow users to start a call from the chat view.  Front end was written in React.js using Typescript.
+				\item Improved Meeting Scheduling Service Level Objective from 96.2\% to 99.9\% success rate, and decreased Availability Search SLO from 5s to 2s (99th percentile) by refactoring and optimizing legacy code.
+				\item Separated Meetings functionality from a monolith architecture into its own microservice, with no downtime, while also updating the code to Java11.
+				\item Managed a multi-team effort to build text messaging and phone calling features using the Twilio API.   
+				\item Built out the full stack Zoom integration to include Zoom meetings links on Drift calendar events, and allow users to start a call from the chat view.
 			\end{itemize}
-		\end{cvsubsection}
+		\end{cvsubsection2}
 		
-		\begin{cvsubsection}{Software Engineer}{Drift}{June 2018 - October 2019}		
-			Meetings Team, Boston, MA
+		\begin{cvsubsection2}{Software Engineer, \normalfont Meetings Team}{June 2018 - October 2019}		
 			\begin{itemize}
-				\item Built out Google and Microsoft calendar integrations, which allowed users to book meetings with their \\ customers directly through Drift.  Supported OAuth 2.0 connections, and handled errors from these APIs.
-				\item Built the Drift Assistant, which sends personalized reminder emails to a customer before a meeting.  \\Functionality was written in Java8, using Dropwizard. 
+				\item Built Google and Microsoft calendar integrations, which allowed users to book meetings with their \\ customers directly through Drift. 
+				\item Supported OAuth 2.0 connections and handled errors for Microsoft and Google APIs.
+				\item Launched the Drift Assistant, which sends personalized reminder emails to a customer before a meeting. 
 				\item Maintained 99.9\% success rate for Assistant emails by reducing dependencies and establishing fallbacks.
 			\end{itemize}
-		\end{cvsubsection}
+		\end{cvsubsection2}
 		
-		\begin{cvsubsection}{Software Engineer}{128 Technology}{March 2017 – June 2018}
-			Application Services Team, Burlington, MA
+		\begin{cvsubsection}{Software Engineer, \normalfont Services Team}{128 Technology}{March 2017 – June 2018}
 			\begin{itemize}
 				\item Worked in a 90 person startup building a next generation, session smart, SD WAN router.
 				\item Designed and implemented various services such as DNS, DHCP, and PPPoE.
 				\item Features were written in C++14, while CLI components and integration tests were written in Python3.
 			\end{itemize}
 		\end{cvsubsection}
-	\end{cvsection}
-	
-	\begin{cvsection}{Education}
-		\begin{cvsubsection}{Worcester, MA}{Worcester Polytechnic Institute}{Fall 2013 -- May 2017}
-			\begin{itemize}
-				\item B.S. in Computer Science. GPA: 3.21 / 4.0
-				\item \bf{Related Coursework:} \normalfont{Object Oriented Analysis and Design, Network Security, Artificial Intelligence, Database Systems, Data Mining, 
-				Embedded Systems, Data Science, Linear Optimization, Operating Systems, Webware}
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
-	\begin{cvsection}{Languages and Technologies}
-		\begin{cvsubsection}{}{}{}	
-			\begin{itemize}
-				\item \bf{Languages:} \normalfont{Java, Python, Javascript/HTML/CSS, C++, SQL, Bash}
-				\item \bf{Frameworks and Libraries:} \normalfont{Dropwizard, React.js, Typescript, Spring}
-				\item \bf{Tools:} \normalfont{Git, AWS (Dynamo, EKS, SNS/SQS, Kinesis, S3), Kubernetes, Maven, NPM, Lightstep, Kibana, Grafana, GCP, Mode, Jira, Slack}
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
+	\end{cvsection}	
 \end{document}

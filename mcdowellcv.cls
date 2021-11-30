@@ -217,4 +217,33 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 	\end{adjustwidth}
 	\vspace*{\aftersubsectionspace}
 }
+
+\newtoggle{left2titledefined}
+\newtoggle{right2titledefined}
+
+\newenvironment{cvsubsection2}[3][1]{
+	\vspace*{\beforesectionheaderspace}
+	\notblank{#2}{\toggletrue{left2titledefined}}{}
+	\notblank{#3}{\toggletrue{right2titledefined}}{}
+	\ifboolexpr{togl {left2titledefined} or togl {right2titledefined}}{
+		\begin{tabu} to 1\textwidth { X[l,p] X[r,p] }
+			\textbf{#2} & \textbf{#3} \\
+		\end{tabu}
+		% Add space according to the specidied number of lines
+		\ifnumcomp{#1}{=}{1}{\vspace*{\aftersinglelinesubsectionheaderspace}}{
+			\ifnumcomp{#1}{=}{2}{\vspace*{\afterdoublelinesubsectionheaderspace}}{
+				\vspace*{\aftermultilinesubsectionheaderspace}
+			}
+		}
+	}{
+		\vspace*{\afteremptysubsectionheaderspace}
+	}
+	\togglefalse{left2titledefined}
+	\togglefalse{right2titledefined}
+	\begin{adjustwidth}{\subsectionmargin}{\subsectionmargin}
+}
+{
+	\end{adjustwidth}
+	\vspace*{\aftersubsectionspace}
+}
 \makeatother
